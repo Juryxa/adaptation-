@@ -1,0 +1,264 @@
+:root {
+  --graphite: #ffffff;
+  --light-gray: #cfcfcf;
+  --sun-gray: #7A7A7A;
+  --gray: #595959;
+  --white: #000000;
+  --black: #ffffff;
+  --blue: #1160d3;
+  --blue-middle: #7bb0ff;
+  --blue-dark: #a1bae1;
+  --red: #BA3232;
+  --red-middle: #D14A4A;
+  --red-dark: #E17373;
+  --green: #1FA344;
+  --green-middle: #3CC162;
+  --green-dark: #59E781;
+  --orange: #D06400;
+  --orange-middle: #D98F4A;
+  --orange-dark: #FFB672;
+  --yellow: #E3A400;
+  --yellow-middle: #DCB348;
+  --yellow-dark: #FFD25E
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 2.947rem;
+  border-radius: 0;
+  background-clip: content-box;
+  background-color: rgba(0,0,0,.33)
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,.66)
+}
+
+.mini-scroll::-webkit-scrollbar-thumb {
+  height: 2.947rem;
+  width: 2.947rem;
+  border-radius: 0;
+  border-left: .421rem solid rgb(0 0 0/0%);
+  background-clip: content-box;
+  background-color: rgba(0,0,0,.33)
+}
+
+.mini-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,.66)
+}
+
+.header {
+  background-color: rgb(255 255 255/61%)
+}
+
+.header-blur .header {
+  background-color: rgb(255 255 255/61%)
+}
+
+.mini-widget .btn-link {
+  fill: var(--black)
+}
+
+.block-home-banner {
+  box-shadow: inset rgb(255 255 255/5%) 0 0 0 50rem
+}
+
+.beta {
+  background-color: #676767
+}
+
+.block-launcher {
+  background-image: url(/images/bannerlauncher2.png)
+}
+
+.payment-info-line text {
+  color: #fff
+}
+
+@keyframes launcher {
+  0% {
+    transform: matrix3d(1,0,0,0,0,1,0,.002,0,0,1,0,0,0,0,1) rotate3d(1,0,0,77deg) scale(.3);
+    box-shadow: rgba(188,77,107,.31) 0 0 0 0,rgba(43,24,122,.3) 0 0 0 0;
+    opacity: 0
+  }
+
+  70% {
+    transform: matrix3d(1,0,0,0,0,1,0,-.0002,0,0,1,0,0,0,0,1) rotate3d(1,0,0,0deg) scale(1);
+    box-shadow: rgba(188,77,107,.31) 0 -.105rem .263rem .052rem,rgba(43,24,122,.3) 0 .105rem .263rem .21rem;
+    opacity: 1
+  }
+
+  100% {
+    transform: matrix3d(1,0,0,0,0,1,0,-.0002,0,0,1,0,0,0,0,1) rotate3d(1,0,0,0deg) scale(1);
+    box-shadow: rgba(188,77,107,.31) 0 -.526rem 1.052rem .157rem,rgba(43,24,122,.3) 0 .578rem 1.052rem .842rem;
+    opacity: 1
+  }
+}
+
+.select__toggle::after {
+  filter: invert(1)
+}
+
+.button-sec,.button-sec:hover,.button-sec:active {
+  color: var(--blue);
+  background: #ececec;
+  border: solid 0 #ececec
+}
+
+.sub-card-bg .sub-header>h3,.sub-card-bg .sub-header>text {
+  color: var(--black)
+}
+
+@keyframes theme {
+  0% {
+    margin-left: 1.315rem;
+    background-image: url(/tochno_ne_cris/icons/moon.svg)
+  }
+
+  100% {
+    margin-left: 0;
+    background-image: url(/tochno_ne_cris/icons/sun.svg)
+  }
+}
+
+.theme-switch span {
+  filter: invert(1)
+}
+
+.balance-line-bg {
+  background-color: rgba(0,0,0,.3)
+}
+
+.theme-switch {
+  border: solid 1px rgb(0 0 0/25%)
+}
+
+.home-banner h1,.home-banner text {
+  color: var(--black)
+}
+
+.header-shadow {
+  box-shadow: inset rgba(255,255,255,.66) 0 120px 49px -108px
+}
+
+header {
+  box-shadow: inset transparent 0 120px 49px -108px
+}
+
+.payment-info {
+  background-color: var(--blue);
+  border: solid 1px var(--blue-dark)
+}
+
+.p-iron {
+  background-color: #aaa
+}
+
+.p-vip {
+  background-color: #edde10
+}
+
+.p-vipp {
+  background-color: #edde10
+}
+
+.p-gold {
+  background-color: #edde10
+}
+
+.p-premium {
+  background-color: #00dc00
+}
+
+.p-premiump {
+  background-color: #00dc00
+}
+
+.p-diamond {
+  background-color: #19d8d8
+}
+
+.p-mvp {
+  background-color: #19d8d8
+}
+
+.p-mvpp {
+  background-color: #19d8d8
+}
+
+.p-emerald {
+  background-color: #00ab00
+}
+
+.p-sponsor {
+  background-color: #fa0
+}
+
+.p-netopt {
+  background-color: #fa0
+}
+
+.p-god {
+  background-color: #fa0
+}
+
+.p-paradox {
+  background-color: #f0f
+}
+
+.select__toggle:hover {
+  color: var(--black)
+}
+
+.select__toggle:hover::after {
+  filter: invert(0)
+}
+
+.headerlanding header .header {
+  transition: .1s;
+  background-color: transparent
+}
+
+.headerlanding header .logo {
+  fill: var(--black)
+}
+
+.headerlanding .header-blur .logo {
+  fill: var(--white)
+}
+
+.headerlanding .header-link {
+  color: var(--black)
+}
+
+.headerlanding .header-blur .header-link {
+  color: var(--white)
+}
+
+.headerlanding header .theme-switch span {
+  filter: invert(0)
+}
+
+.headerlanding .header-blur .theme-switch span {
+  filter: invert(1)
+}
+
+.headerlanding .header-blur>.header {
+  transition: .1s;
+  background-color: rgb(255 255 255/61%)
+}
+
+.headerlanding header .theme-switch {
+  border: solid 1px rgb(255 255 255/45%)
+}
+
+.headerlanding .header-blur .theme-switch {
+  border: solid 1px rgb(0 0 0/25%)
+}
+
+.status-role img {
+  filter: invert(1)
+}
+
+.box-emoji img {
+  background: #e8e8e8
+}
