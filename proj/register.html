@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta name="description" content="Игровые сервера Minecraft">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, viewport-fit=cover, minimum-scale=0.65, maximum-scale=5">
+  <title>Хуяликс</title>
+  <link rel="stylesheet" href="content/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <style id="PageStyles">
+  </style>
+  <link id="ThemeStyles" rel="stylesheet" type="text/css" href="content/css/light.theme.css" /> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script>
+    function post(path, params, method = 'post') {
+      const form = document.createElement('form');
+      form.method = method;
+      form.action = path;
+      for (const key in params) {
+        if (params.hasOwnProperty(key)) {
+          const hiddenField = document.createElement('input');
+          hiddenField.type = 'hidden';
+          hiddenField.name = key;
+          hiddenField.value = params[key];
+          form.appendChild(hiddenField);
+        }
+      }
+      document.body.appendChild(form);
+      form.submit();
+    }
+  </script>
+</head>
+<body id="body">
+
+
+<header id="boxheader">
+  <div class="header" id="header">
+    <div class="header-nav">
+      <a href="#" title="На главную" class="logo">
+        <svg width="100%" height="100%" viewBox="0 0 267 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(1,0,0,1,-4.096,-8.05)">
+<path d="M54.491,41.063L45.271,31.846L36.054,41.062L45.271,50.283L54.491,41.063ZM42.967,29.167L23.529,9.729L4.096,29.167L23.529,48.604L42.967,29.167ZM88.957,42.345C86.372,42.345 84.006,41.762 81.931,40.634C79.819,39.505 78.181,37.94 76.98,35.938C75.779,33.935 75.16,31.678 75.16,29.166C75.16,26.655 75.779,24.361 76.98,22.359C78.181,20.357 79.819,18.828 81.931,17.663C84.006,16.534 86.372,15.988 88.993,15.988C91.214,15.988 93.216,16.389 95,17.153C96.747,17.918 98.276,19.046 99.478,20.502L95.692,23.997C93.981,21.995 91.833,21.012 89.285,21.012C87.719,21.012 86.299,21.34 85.062,22.031C83.824,22.723 82.877,23.706 82.186,24.944C81.494,26.181 81.13,27.601 81.13,29.166C81.13,30.732 81.494,32.152 82.186,33.389C82.877,34.627 83.824,35.61 85.062,36.265C86.299,36.957 87.719,37.321 89.285,37.321C91.833,37.321 93.981,36.302 95.692,34.299L99.478,37.794C98.276,39.287 96.747,40.415 94.964,41.18C93.18,41.944 91.178,42.345 88.957,42.345ZM150.516,42.345C148.514,42.345 146.548,42.054 144.692,41.507C142.798,40.998 141.27,40.27 140.141,39.396L142.143,34.955C143.235,35.756 144.546,36.411 146.038,36.884C147.531,37.357 149.06,37.612 150.553,37.612C152.227,37.612 153.465,37.357 154.266,36.848C155.067,36.374 155.467,35.719 155.467,34.882C155.467,34.263 155.249,33.753 154.775,33.389C154.302,32.952 153.683,32.661 152.955,32.406C152.191,32.152 151.208,31.897 149.934,31.606C148.004,31.132 146.403,30.695 145.165,30.222C143.927,29.749 142.871,29.021 141.998,28.002C141.087,26.982 140.651,25.635 140.651,23.924C140.651,22.432 141.051,21.085 141.852,19.883C142.653,18.718 143.854,17.736 145.456,17.044C147.094,16.352 149.06,15.988 151.39,15.988C153.028,15.988 154.593,16.17 156.159,16.571C157.724,16.971 159.071,17.517 160.236,18.245L158.416,22.723C156.05,21.376 153.72,20.721 151.353,20.721C149.715,20.721 148.478,20.976 147.677,21.522C146.912,22.068 146.512,22.759 146.512,23.633C146.512,24.507 146.985,25.162 147.895,25.562C148.805,25.999 150.189,26.436 152.045,26.837C153.975,27.31 155.576,27.747 156.814,28.22C158.052,28.693 159.108,29.421 160.018,30.404C160.891,31.387 161.328,32.734 161.328,34.445C161.328,35.901 160.928,37.212 160.127,38.413C159.29,39.614 158.088,40.597 156.45,41.289C154.812,41.981 152.846,42.345 150.516,42.345ZM136.1,16.425L130.203,16.425L130.203,41.908L136.1,41.908L136.1,16.425ZM241.999,16.425L236.102,16.425L236.102,41.908L241.999,41.908L241.999,16.425ZM214.114,16.425L220.011,16.425L220.011,37.103L232.789,37.103L232.789,41.908L214.114,41.908L214.114,16.425ZM170.283,21.23L162.129,21.23L162.129,16.425L184.335,16.425L184.335,21.23L176.181,21.23L176.181,41.908L170.283,41.908L170.283,21.23ZM119.682,41.908L114.767,34.809L109.343,34.809L109.343,41.908L103.446,41.908L103.446,16.425L114.476,16.425C116.733,16.425 118.699,16.789 120.374,17.554C122.012,18.318 123.286,19.374 124.196,20.757C125.106,22.14 125.543,23.779 125.543,25.672C125.543,27.565 125.106,29.203 124.196,30.55C123.25,31.933 121.975,32.989 120.301,33.717L126.016,41.908L119.682,41.908ZM264.097,41.908L257.944,33.062L251.901,41.908L245.13,41.908L254.559,28.948L245.603,16.425L252.302,16.425L258.163,24.689L263.915,16.425L270.285,16.425L261.403,28.73L270.904,41.908L264.097,41.908ZM203.011,36.447L191.179,36.447L188.922,41.908L182.879,41.908L194.237,16.425L200.062,16.425L211.456,41.908L205.268,41.908L203.011,36.447ZM54.491,41.063L54.492,41.063L54.492,41.062L54.491,41.063ZM66.388,29.167L57.171,19.95L47.954,29.167L57.171,38.383L66.388,29.167ZM201.154,31.97L197.113,22.213L193.072,31.97L201.154,31.97ZM119.573,25.672C119.573,24.252 119.1,23.123 118.189,22.359C117.279,21.594 115.932,21.23 114.149,21.23L109.343,21.23L109.343,30.113L114.149,30.113C115.932,30.113 117.279,29.713 118.189,28.948C119.1,28.184 119.573,27.091 119.573,25.672ZM54.492,17.271L45.271,8.05L36.054,17.271L45.271,26.488L54.492,17.271Z" style="fill: inherit;fill-rule:nonzero;" />
+</g>
+</svg>
+      </a>
+      <a href="play.html" class="header-link">Играть <span></span> </a>
+      <a href="launcher.html" class="header-link">Лаунчер <span></span></a>
+      <a href="servers.html" class="header-link">Сервера <span></span></a>
+      <a href="donate.html" class="header-link">Донат <span></span></a>
+      <a href="forum.html" class="header-link">Форум<span></span></a>
+      <a href="info.html" class="header-link">Помощь <span></span></a>
+    </div>
+    <div class="header-nav">
+      <div onclick="iwanntchangetheme();" class="theme-switch"><span id="theme-switch"></span></div>
+      <a href="enter.html" class="header-link">Войти</a>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav">
+  <a href="index.html" class="btn-nav ">
+    <div class="nav-icon">
+      <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<path d="M907.052,343.215L500,35.746L92.948,343.215L92.948,907.052L907.052,907.052L907.052,343.215ZM618.731,807.052L807.052,807.052L807.052,807.052C807.052,807.052 807.052,392.792 807.052,392.792C807.052,392.792 500,161.387 500,161.387C429.255,215.198 251.804,348.025 192.948,392.792C192.948,469.435 192.948,703.623 192.948,807.052L381.269,807.052L381.269,537.105L618.731,537.105L618.731,807.052Z" style="fill: inherit;" />
+</svg>
+    </div>
+    <text>Главная</text>
+  </a>
+  <a href="servers.html" class="btn-nav ">
+    <div class="nav-icon">
+      <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<path d="M907.052,906.204L907.052,547.587L544.499,547.587L544.499,906.204L907.052,906.204ZM456.076,906.204L456.076,547.587L93.523,547.587L93.523,906.204L456.076,906.204ZM806.984,806.204L644.566,806.204C644.566,760.508 644.566,693.283 644.566,647.587C644.566,647.587 806.984,647.587 806.984,647.587L806.984,806.204ZM356.008,806.204L193.59,806.204C193.59,806.204 193.59,709.306 193.59,647.587C193.59,647.587 356.008,647.587 356.008,647.587L356.008,806.204ZM543.924,452.413L906.477,452.413L906.477,93.796L543.924,93.796L543.924,452.413ZM92.948,452.413L455.501,452.413L455.501,93.796L92.948,93.796L92.948,452.413ZM355.434,352.413L193.016,352.413C193.016,352.413 193.016,255.515 193.016,193.796C239.645,193.796 308.805,193.796 355.434,193.796C355.434,193.796 355.434,352.413 355.434,352.413L355.434,352.413ZM806.41,352.413L643.992,352.413C643.992,352.413 643.992,193.796 643.992,193.796C643.992,193.796 806.41,193.796 806.41,193.796L806.41,352.413Z" style="fill: inherit;" />
+</svg>
+    </div>
+    <text>Сервера</text>
+  </a>
+  <a href="forum.html" class="btn-nav ">
+    <div class="nav-icon">
+      <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<path d="M907.052,134.406L92.948,134.406L92.948,865.594L205.017,865.594L417.444,723.454L907.052,723.454L907.052,134.406ZM192.948,234.406L807.052,234.406C807.052,234.406 807.052,623.454 807.052,623.454C807.052,623.454 386.734,623.454 386.734,623.454L192.948,752.953L192.948,234.406ZM637.86,371.863C673.221,371.863 701.929,400.571 701.929,435.931C701.929,471.292 673.221,500 637.86,500C602.5,500 573.792,471.292 573.792,435.931C573.792,400.571 602.5,371.863 637.86,371.863Z" style="fill: inherit;" />
+</svg>
+    </div>
+    <text>Форум</text>
+  </a>
+  <a href="info.html" class="btn-nav ">
+    <div class="nav-icon">
+      <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<path d="M500,72.038C263.801,72.038 72.038,263.801 72.038,500C72.038,736.199 263.801,927.962 500,927.962C736.199,927.962 927.962,736.199 927.962,500C927.962,263.801 736.199,72.038 500,72.038ZM500,172.038C681.007,172.038 827.962,318.993 827.962,500C827.962,681.007 681.007,827.962 500,827.962C318.993,827.962 172.038,681.007 172.038,500C172.038,318.993 318.993,172.038 500,172.038ZM550,729.713C533.843,733.026 517.123,734.765 500,734.765C482.877,734.765 466.157,733.026 450,729.713L450,455.3L550,455.3L550,729.713ZM500,265.235C535.36,265.235 564.069,293.943 564.069,329.304C564.069,364.664 535.36,393.372 500,393.372C464.64,393.372 435.931,364.664 435.931,329.304C435.931,293.943 464.64,265.235 500,265.235Z" style="fill: inherit;" />
+</svg>
+    </div>
+    <text>Помощь</text>
+  </a>
+  <div id="BntNav" class="btn-nav btn-menu">
+    <div class="nav-icon">
+      <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<path d="M92.948,820.091L907.052,820.091L907.052,720.091L92.948,720.091L92.948,820.091ZM92.948,550L907.052,550L907.052,450L92.948,450L92.948,550ZM92.948,279.909L907.052,279.909L907.052,179.909L92.948,179.909L92.948,279.909Z" style="fill: inherit;" />
+</svg>
+      <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<path d="M500,429.289L186.595,115.885L115.885,186.595L429.289,500L115.885,813.405L186.595,884.115L500,570.711L813.405,884.115L884.115,813.405L570.711,500L884.115,186.595L813.405,115.885L500,429.289Z" style="fill: inherit;" />
+</svg>
+    </div>
+    <text>Меню</text>
+  </div>
+</div>
+<div id="BlockNav" class="block-mobile-nav">
+  <div class="box-mobile-nav">
+    <h1>Меню навигации</h1>
+    <div class="list-mobile-nav mini-scroll">
+      <div onclick="iwanntchangetheme();" class="btn-nav-menu">
+        Cменить тему <div class="theme-switch"><span id="theme-switch-m"></span></div>
+      </div>
+      <a href="play.html" class="btn-nav-menu">
+        Играть <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+      <a href="launcher.html" class="btn-nav-menu">
+        Лаунчер <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+
+      <a href="info/rules.html" class="btn-nav-menu btn-nav-menu-half">
+        Правила <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+      <a href="info.html" class="btn-nav-menu btn-nav-menu-half">
+        Помощь <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+      <a href="donate.html" class="btn-nav-menu btn-nav-menu-half">
+        Донат <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+      <a href="index.html" class="btn-nav-menu btn-nav-menu-half">
+        Главная <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+      <a href="enter.html" class="btn-nav-menu">
+        Войти <div class="btn-link"><svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(3.01266e-18,-0.0492005,0.0492005,3.01266e-18,0.399739,49.6003)">
+<path d="M1000,1000L1000,-0L871.068,-0L871.068,779.9L91.169,0L0,91.169L779.9,871.068L0,871.068L0,1000L1000,1000Z" style="fill:inherit;" />
+</g>
+</svg></div>
+      </a>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="block-auth">
+    <div class="box-auth">
+      <div class="box-toggle">
+        <Button onclick="window.location.href='enter.html'">Вход</Button>
+        <Button disabled>Регистрация</Button>
+      </div>
+      <form class="box-auth-form">
+        <div id="username-error-block" class="box-input">
+          <input id="username-input" name="username" placeholder="Никнейм" type="text" required>
+          <text id="username-error"></text>
+        </div>
+        <div id="email-error-block" class="box-input">
+          <input id="email-input" name="email" placeholder="E-Mail" type="email" required>
+          <text id="email-error"></text>
+        </div>
+        <div id="password-error-block" class="box-input">
+          <input id="password-input" name="password" placeholder="Пароль" type="password" required>
+          <text id="password-error"></text>
+        </div>
+        <div id="repeat-password-error-block" class="box-input">
+          <input id="repeat-password-input" name="repeat-password" placeholder="Повтор пароля" type="password" class="" required>
+          <text id="repeat-password-error"></text>
+        </div>
+        <div id="mojang-username-error-block" class="box-input">
+          <input id="mojang-username-input" name="username" placeholder="Скин по нику Minecraft.net (необязательно)" type="text" class="">
+          <text id="mojang-username-error">Игрок с данным ником Mojang не существует</text>
+        </div>
+        <div class="block-checkbox">
+          <label class="box-checkbox">
+            <input id="agreed-input" name="reg" class="checkbox" type="checkbox">
+            <span>
+<div class="text"><text>Я согласен(-на) с положениями <a class="link" target="_blank" href="#">Пользовательского соглашения</a>, <a class="link" target="_blank" href="#">Политикой конфиденциальности</a> и <a class="link" target="_blank" href="#">правилами проекта</a>.</text></div>
+</span>
+          </label>
+        </div>
+        <button class="auth-button" id="register-button" type="submit" disabled>Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-corp">
+    <text class="text footer-header">© CRISTALIX.GG 2018-2023 </text>
+    <text class="text">Все права защищены!<br>
+      Оригинальные права принадлежат Mojang AB </text>
+  </div>
+  <div class="footer-info">
+    <text class="payment-processing text">Обработкой платежей занимается ООО "ИГРОВЫЕ ТЕХНОЛОГИИ"</br> ОГРН-1201600081187, ИНН-1655447391</text>
+    <div class="footer-politics">
+      <a href="#" class="text link">Пользовательское соглашение</a> <a href="#" class="text link">Политика конфиденциальности</a> <a href="/info/contacts" class="text link">Контакты</a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="content/js/themev2.js"></script>
+<script type="text/javascript" src="content/js/mobile.js"></script>
+<script type="text/javascript" src="content/js/header.js"></script>
+</body>
+</html>
+
